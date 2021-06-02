@@ -11,9 +11,6 @@ public class PlayerControll : MonoBehaviour
     [SerializeField] //runSpeed를 Inspector창에서 수정 가능하도록 하는 기능
     private float runSpeed; //달리는 속도 변수 설정
 
-    [SerializeField]
-    private float crouchSpeed;//앉는 속도 변수 설정
-
     private float applySpeed; //걷는 속도와 달리는 속도를 대입할 수 있도록 하는 변수 설정
 
     [SerializeField] //jumpForce를 Inspector창에서 수정 가능하도록 하는 기능
@@ -21,14 +18,8 @@ public class PlayerControll : MonoBehaviour
 
     //상태 변수
     private bool isRun = false; //뛰는지 안뛰는지 상태를 확인해주는 변수 코드
-    private bool isCrouch = false; //앉았는지 앉지 않았는지 상태를 확인해주는 변수 코드
     private bool isGround = true; //땅에 있는지 없는지 상태를 확인해주는 변수 코드
 
-    // 앉았을 때 얼마나 앉을지 결정하는 변수.
-    [SerializeField]
-    private float crouchPosY; //숙였을 때의 변수
-    private float originPosY; //숙였다가 다시 원래 상태로 돌아오게 하는 변수(처음 높이)
-    private float applyCrouchPosY; //숙였을 때와 다시 원래 상태로 돌아오게 하는 변수를 대입할 수 있도록 하는 변수 설정
 
     private CapsuleCollider capsuleCollider; //땅 착지 여부
 
@@ -56,8 +47,6 @@ public class PlayerControll : MonoBehaviour
         capsuleCollider = GetComponent<CapsuleCollider>(); //Inspector창에서 CapsuleCollider를 불러온다.
         myRigid = GetComponent<Rigidbody>(); //Inspector창에서 Rigidbody를 불러온다.
         applySpeed = walkSpeed; //달리기 전까지 걷는 상태                            
-        originPosY = theCamera.transform.localPosition.y; //카메라의 Y축 위치를 앉는 여부에 따라 움직이도록 설정
-        applyCrouchPosY = originPosY; //Player가 기본적으로 서있는 상태
         playerAnim = GameObject.Find("TT_demo_male_B").GetComponent<Animator>(); //Inspector창에서 Animator를 불러온다.
     }
 
@@ -70,56 +59,9 @@ public class PlayerControll : MonoBehaviour
         IsGround(); //땅에 착지하고 있는지 하지 않는지 제어하기 위한 코드 작성 전 함수 정의
         TryJump(); //점프를 실행 및 제어하기 위한 코드 작성 전 함수 정의
         TryRun(); //뛰는지 걷는지 제어하기 위한 코드 작성 전 함수 정의(움직임 제어)
-        TryCrouch(); //앉는 여부를 제어하기 위한 코드 작성 전 함수 정의
         Move(); //클릭을 하면 실시간으로 움직이도록 하는 코드를 작성하기 위한 함수 정의
         CameraRotation(); //카메라 움직임 함수 정의
         CharacterRotation(); //캐릭터 움직임 함수 정의
-
-    }
-
-    // 앉기 시도
-    private void TryCrouch()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftControl)) //왼쪽 Control를 눌렀을 때
-        {
-            Crouch(); //앉도록 실행
-        }
-    }
-
-    // 앉기 동작
-    private void Crouch()
-    {
-        isCrouch = !isCrouch; //isCrouch가 true이거나, false이거나
-
-        if (isCrouch) //앉을 경우
-        {
-            applySpeed = crouchSpeed; //applySpeed를 앉는 속도로 바꾼다.
-            applyCrouchPosY = crouchPosY; //앉았을 때 crouchPosY 실행
-        }
-        else //일어섰을 경우
-        {
-            applySpeed = walkSpeed; //applySpeed를 걷는 속도로 바꾼다.
-            applyCrouchPosY = originPosY; //섰을 때 originPosY 실행
-        }
-
-        StartCoroutine(CrouchCoroutine()); //CrouchCoroutine을 실행시켜준다.
-
-        IEnumerator CrouchCoroutine() //부드럽게 카메라 동작 실행
-        {
-            float _posY = theCamera.transform.localPosition.y; //_posY는 카메라의 Y축 움직임(상대적인 움직임 조정)
-            int count = 0; //저장하기 위한 임시 변수 설정
-
-            while (_posY != applyCrouchPosY) //_posY가 원하는 값이면 벗어나온다.
-            {
-                count++;//목표까지 도달하기 전까지 count가 하나씩 증가 한다.
-                _posY = Mathf.Lerp(_posY, applyCrouchPosY, 0.3f); //_posY(시작)부터 applyCrouchPosY(목적지)까지 설정한 속도만큼 증가한다.
-                theCamera.transform.localPosition = new Vector3(0, _posY, 0);
-                if (count > 15) //15번 도달하면
-                    break; //while문을 빠져나간다.
-                yield return null; // applyCrouchPosY(목적지)까지 반복한다.
-            }
-            theCamera.transform.localPosition = new Vector3(0, applyCrouchPosY, 0f); //카메라 움직임 위치를 서있는 위치와 일치시켜라
-        }
 
     }
 
@@ -141,10 +83,6 @@ public class PlayerControll : MonoBehaviour
     // 점프
     private void Jump()
     {
-        // 앉은 상태에서 점프시 앉은 상태 해제.
-        if (isCrouch)
-            Crouch();
-
         myRigid.velocity = transform.up * jumpForce; //Player의 움직임에서 Y축으로 설정한 점프 힘만큼 증가하도록 한다.
     }
 
@@ -164,9 +102,6 @@ public class PlayerControll : MonoBehaviour
     // 달리기 실행
     private void Running()
     {
-        if (isCrouch)
-            Crouch();
-
         isRun = true; //달리기 실행
         applySpeed = runSpeed; //걷는 속도가 달리는 속도로 바뀐다.
     }
@@ -197,6 +132,16 @@ public class PlayerControll : MonoBehaviour
         else
         {
             playerAnim.SetBool("Run", false); //멈춰라
+        }
+
+        if (Input.GetMouseButtonDown(0)) //왼쪽 마우스 버튼을 누르면
+        {
+            playerAnim.SetBool("Hit", true); //때리는 애니메이션을 실행
+        }
+
+        if (Input.GetMouseButtonUp(0)) //왼쪽 마우스 버튼이 올라오면
+        {
+            playerAnim.SetBool("Hit", false); //때리는 애니메이션을 멈춰라
         }
 
     }
