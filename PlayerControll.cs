@@ -32,6 +32,13 @@ public class PlayerControll : MonoBehaviour
     private float cameraRotationLimit; //마우스로 카메라를 조절할 때 일정 각도까지만 움직이도록 제한을 준다.
     private float currentCameraRotationX = 0; //카메라가 정면을 바라볼 수 있도록 설정
 
+    private bool pon1;
+    private bool pon2;
+    private bool pon3;
+
+
+    public GameObject[] weapon;
+
     //필요한 컴포넌트
     [SerializeField]
     private Camera theCamera; //Camera의 GetComponent를 불러온다.
@@ -62,9 +69,29 @@ public class PlayerControll : MonoBehaviour
         Move(); //클릭을 하면 실시간으로 움직이도록 하는 코드를 작성하기 위한 함수 정의
         CameraRotation(); //카메라 움직임 함수 정의
         CharacterRotation(); //캐릭터 움직임 함수 정의
+        Swap();
+
 
     }
+    void GetInput()
+    {
+        pon1 = Input.GetButtonDown("Pon1");
+        pon2 = Input.GetButtonDown("Pon2");
 
+        Debug.Log("dd");
+    }
+
+    void Swap()
+    {
+        int weaponIndex = -1;
+        if (pon1) weaponIndex = 0;
+        if (pon2) weaponIndex = 1;
+
+        if (pon1 || pon2)
+        {
+            weapon[weaponIndex].SetActive(true);
+        }
+    }
     // 지면 체크.
     private void IsGround()
     {
@@ -134,6 +161,7 @@ public class PlayerControll : MonoBehaviour
             playerAnim.SetBool("Run", false); //멈춰라
         }
 
+
         if (Input.GetMouseButtonDown(0)) //왼쪽 마우스 버튼을 누르면
         {
             playerAnim.SetBool("Hit", true); //때리는 애니메이션을 실행
@@ -142,6 +170,16 @@ public class PlayerControll : MonoBehaviour
         if (Input.GetMouseButtonUp(0)) //왼쪽 마우스 버튼이 올라오면
         {
             playerAnim.SetBool("Hit", false); //때리는 애니메이션을 멈춰라
+        }
+
+        if (Input.GetMouseButtonDown(1)) //오른쪽 마우스 버튼을 누르면
+        {
+            playerAnim.SetBool("Dig", true); //캐는 애니메이션을 실행
+        }
+
+        if (Input.GetMouseButtonUp(1)) //오른쪽 마우스 버튼이 올라오면
+        {
+            playerAnim.SetBool("Dig", false); //캐는 애니메이션을 멈춰라
         }
 
     }
@@ -165,4 +203,5 @@ public class PlayerControll : MonoBehaviour
 
         theCamera.transform.localEulerAngles = new Vector3(currentCameraRotationX, 0f, 0f); //실제 카메라에 적용시키기 위한 설정을 한다. 마우스를 앞 뒤로 움직였을 때 카메라가 상 하(X축)로만 움직이도록 설정한다.
     }
+
 }
