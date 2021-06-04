@@ -32,6 +32,10 @@ public class PlayerControll : MonoBehaviour
     private float cameraRotationLimit; //마우스로 카메라를 조절할 때 일정 각도까지만 움직이도록 제한을 준다.
     private float currentCameraRotationX = 0; //카메라가 정면을 바라볼 수 있도록 설정
 
+    public GameObject bullet;
+    public float bulletspeed = 10.0f;
+    private AudioSource audioBullet;
+
     private bool pon1;
     private bool pon2;
     private bool pon3;
@@ -53,8 +57,9 @@ public class PlayerControll : MonoBehaviour
     {
         capsuleCollider = GetComponent<CapsuleCollider>(); //Inspector창에서 CapsuleCollider를 불러온다.
         myRigid = GetComponent<Rigidbody>(); //Inspector창에서 Rigidbody를 불러온다.
+        audioBullet = GetComponent<AudioSource>();
         applySpeed = walkSpeed; //달리기 전까지 걷는 상태                            
-        playerAnim = GameObject.Find("TT_demo_male_B").GetComponent<Animator>(); //Inspector창에서 Animator를 불러온다.
+        playerAnim = GameObject.Find("Player").GetComponent<Animator>(); //Inspector창에서 Animator를 불러온다.
     }
 
 
@@ -71,12 +76,19 @@ public class PlayerControll : MonoBehaviour
         CharacterRotation(); //캐릭터 움직임 함수 정의
         Swap();
 
+        if (Input.GetMouseButtonDown(1))
+        {
+            GameObject newBullet = Instantiate(bullet, transform.position + transform.forward, transform.rotation) as GameObject; //총알이 Player에서 나오도록하기
+            Rigidbody rbBullet = newBullet.GetComponent<Rigidbody>(); //총알의 Rigidbody불러오기
+            rbBullet.velocity = transform.forward * bulletspeed; //총알이 Player 앞에 나오도록 하기
+        }
+
 
     }
     void GetInput()
     {
-        pon1 = Input.GetButtonDown("Pon1");
-        pon2 = Input.GetButtonDown("Pon2");
+        pon1 = Input.GetButtonDown("1");
+        pon2 = Input.GetButtonDown("2");
 
         Debug.Log("dd");
     }
@@ -174,12 +186,13 @@ public class PlayerControll : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1)) //오른쪽 마우스 버튼을 누르면
         {
-            playerAnim.SetBool("Dig", true); //캐는 애니메이션을 실행
+            playerAnim.SetBool("Dig", true); //총쏘는 애니메이션을 실행
+            audioBullet.Play();
         }
 
         if (Input.GetMouseButtonUp(1)) //오른쪽 마우스 버튼이 올라오면
         {
-            playerAnim.SetBool("Dig", false); //캐는 애니메이션을 멈춰라
+            playerAnim.SetBool("Dig", false); //총쏘는 애니메이션을 멈춰라
         }
 
     }
