@@ -13,7 +13,10 @@ public class zombieMove : MonoBehaviour
     private NavMeshAgent zombie; //좀비의 NavMeshAgent 변수를 만들어준다.
     private AudioSource zombiedie; //좀비 소리 변수 설정
 
-    private int lives = 3; //좀비 체력
+    private GameManger gameManager;
+
+     private int lives = 3;
+
     void OnCollisionEnter(Collision col) //Collider간 발생한 충돌을 감지하는 함수 설정
     {
         if (col.gameObject.tag == "bullet") //만약 날아오는 물체가 총알이라면
@@ -28,6 +31,7 @@ public class zombieMove : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").transform; //player를 불러온다.
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManger>();
         zombiedie = GetComponent<AudioSource>(); //좀비가 가지고 있는 소리를 불러온다.
         zombie = GetComponent<NavMeshAgent>(); //좀비가 가지고 있는 NavMeshAgent를 불러온다.
         patrolRoute = GameObject.Find("Route1").transform; //설정한 위치에 좀비가 나오도록 Route1를 불러온다.
@@ -43,12 +47,18 @@ public class zombieMove : MonoBehaviour
             MoveToNextPatrolPoint(); //다음 지정한 포지션으로 이동
         }
 
+        if (lives <= 0) //만약 체력이 0이라면
         {
-            if (lives == 0) //만약 체력이 0이라면
+            GameObject.Find("zombie(Clone)").GetComponent<AudioSource>().Play();
+
+            Destroy(this.gameObject); //좀비는 사라진다.
+
+            if (this.gameObject.name == "zombie(Clone)")
             {
-                Destroy(gameObject); //좀비는 사라진다
+                gameManager.Score += 1;
             }
         }
+
     }
     void InitializePatrolRoute()
     {
