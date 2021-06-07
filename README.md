@@ -66,11 +66,41 @@
 ![image](https://user-images.githubusercontent.com/84313631/120946050-1d811800-c776-11eb-8944-d01f0472b53f.png)
 
 
+-> 여우한테 닿아 HP가 다 깎이면 게임 오버 씬으로 .
+![image](https://user-images.githubusercontent.com/84313631/120946276-e2331900-c776-11eb-8f8b-cbfa52e31d91.png)
+
+
 -> 일정 개수 이상의 꽃을 구하면 메시지 박스가 뜬다.
 ![image](https://user-images.githubusercontent.com/84313631/120946070-2a057080-c776-11eb-97a5-c9a2f9a63b4e.png)
 
 
-->
+-> 꽃을 다 구하면 밤으로 씬 전환 후 좀비가 나타난다.
+![image](https://user-images.githubusercontent.com/84313631/120946119-54572e00-c776-11eb-848c-cdd470d0fe24.png)
+
+
+-> 좀비한테 닿아 HP가 다 깎이면 게임 종료를 알리는 메시지 박스가 뜬다.
+![image](https://user-images.githubusercontent.com/84313631/120946150-7650b080-c776-11eb-8c40-e396319f866e.png)
+
+
+-> 메시지 박스를 클릭한 후 종료화면
+![image](https://user-images.githubusercontent.com/84313631/120946162-836d9f80-c776-11eb-96e0-f9e4cbb8d484.png)
+
+
+-> 일정 수 이상의 좀비를 죽이면 다음 씬 전환을 위한 메시지 박스가 뜬다.
+![image](https://user-images.githubusercontent.com/84313631/120946183-98e2c980-c776-11eb-814f-765a2bdd286b.png)
+
+
+-> 메시지 박스를 클릭한 후 신비의 물약이 있는 씬이 나타난다.
+![image](https://user-images.githubusercontent.com/84313631/120946204-ae57f380-c776-11eb-97be-15a9e14caa19.png)
+
+
+-> 신비의 물약을 획득한 후 종료환면으로 씬전환을 위한 메시지 박스가 뜬다.
+![image](https://user-images.githubusercontent.com/84313631/120946236-c465b400-c776-11eb-8194-ac058a258ab2.png)
+
+
+-> 게임 최종 성공 씬
+![image](https://user-images.githubusercontent.com/84313631/120946249-d0ea0c80-c776-11eb-91b4-1433f01bb3ff.png)
+
 
 
 
