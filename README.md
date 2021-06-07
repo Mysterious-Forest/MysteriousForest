@@ -51,12 +51,26 @@
 -> 게임 시작 후 첫 화면
 ![image](https://user-images.githubusercontent.com/84313631/120945851-86b45b80-c775-11eb-8263-172cc73a576a.png)
 
--> 무기 교체
+
+-> 무기 교체( 칼 / 방망이 / 총 )
 ![image](https://user-images.githubusercontent.com/84313631/120945886-a481c080-c775-11eb-9073-50071ffa0674.png)
 ![image](https://user-images.githubusercontent.com/84313631/120945891-aba8ce80-c775-11eb-8ee7-8f4c85c85916.png)
 ![image](https://user-images.githubusercontent.com/84313631/120945896-af3c5580-c775-11eb-8d7e-3608d31c2934.png)
 
 
+-> 칼로 나무를 베면 과일이 나타난다. + 과일을 먹으면 HP가 올라간다.
+![image](https://user-images.githubusercontent.com/84313631/120945954-d7c44f80-c775-11eb-8a82-9887fe734fed.png)
+
+
+-> 방망이로 여우를 죽여야 한다. 만약 여우한테 맞으면 HP가 깎인다.  
+![image](https://user-images.githubusercontent.com/84313631/120946050-1d811800-c776-11eb-8944-d01f0472b53f.png)
+
+
+-> 일정 개수 이상의 꽃을 구하면 메시지 박스가 뜬다.
+![image](https://user-images.githubusercontent.com/84313631/120946070-2a057080-c776-11eb-97a5-c9a2f9a63b4e.png)
+
+
+->
 
 
 
