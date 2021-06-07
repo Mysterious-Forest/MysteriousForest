@@ -44,6 +44,19 @@
     - 낮과 밤 : 낮에서 시작해 꽃을 다 획득하면 밤으로 바뀌고, 좀비를 죽이면 다시 낮이 된다.
      
  
+ -> 게임 시작 화면
  ![image](https://user-images.githubusercontent.com/84313631/120945808-62f11580-c775-11eb-8948-818e678d876f.png)
+
+
+-> 게임 시작 후 첫 화면
+![image](https://user-images.githubusercontent.com/84313631/120945851-86b45b80-c775-11eb-8263-172cc73a576a.png)
+
+-> 무기 교체
+![image](https://user-images.githubusercontent.com/84313631/120945886-a481c080-c775-11eb-9073-50071ffa0674.png)
+![image](https://user-images.githubusercontent.com/84313631/120945891-aba8ce80-c775-11eb-8ee7-8f4c85c85916.png)
+![image](https://user-images.githubusercontent.com/84313631/120945896-af3c5580-c775-11eb-8d7e-3608d31c2934.png)
+
+
+
 
 
