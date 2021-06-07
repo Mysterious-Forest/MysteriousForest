@@ -1,4 +1,4 @@
-# 모바일 3D 게임 < Mysterious Forest >
+# 모바일 3D 게임 < Mysterious Forest > - 김미소 / 오은주
 ![image](https://user-images.githubusercontent.com/84313631/120946461-903ec300-c777-11eb-9e0b-cd53dc3c8b2c.png)
 
 
