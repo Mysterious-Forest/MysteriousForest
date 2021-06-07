@@ -65,6 +65,7 @@
 ![image](https://user-images.githubusercontent.com/84313631/120945886-a481c080-c775-11eb-9073-50071ffa0674.png)
 ![image](https://user-images.githubusercontent.com/84313631/120945891-aba8ce80-c775-11eb-8ee7-8f4c85c85916.png)
 ![image](https://user-images.githubusercontent.com/84313631/120945896-af3c5580-c775-11eb-8d7e-3608d31c2934.png)
+![image](https://user-images.githubusercontent.com/84313631/120948650-a8b1dc00-c77d-11eb-9236-f3338ec57dc9.png)
 
 
 -> 칼로 나무를 베면 과일이 나타난다. + 과일을 먹으면 HP가 올라간다.
