@@ -83,36 +83,14 @@
 ![image](https://user-images.githubusercontent.com/84313631/121805681-0fa42900-cc87-11eb-8cfd-54e47f853c12.png) 
 -> 무기 교체( 맨손 / 칼 / 방망이 / 총 / 곡괭이 )
 
--> 칼로 나무를 베면 과일이 나타난다. + 과일을 먹으면 HP가 올라간다.
-![image](https://user-images.githubusercontent.com/84313631/120945954-d7c44f80-c775-11eb-8a82-9887fe734fed.png)
+![image](https://user-images.githubusercontent.com/84313631/121805723-5560f180-cc87-11eb-976a-20c80a166efa.png) -> 칼로 나무를 베면 과일이 나타난다. + 과일을 먹으면 HP가 올라간다.
 
+![image](https://user-images.githubusercontent.com/84313631/121805734-614cb380-cc87-11eb-8bcb-2aa5658d119d.png) -> 과일을 획득하면 인벤토리 안에 개수와 함께 저장된다.
 
--> 과일을 획득하면 인벤토리 안에 개수와 함께 저장된다.
-![image](https://user-images.githubusercontent.com/84313631/121805403-18482f80-cc86-11eb-8c87-50bb47d50d49.png)
+![image](https://user-images.githubusercontent.com/84313631/121805776-96590600-cc87-11eb-967d-98f7168f9d14.png) -> 방망이로 여우를 죽여야 한다. 만약 여우한테 맞으면 HP가 깎인다.  
+![image](https://user-images.githubusercontent.com/84313631/121805812-c2748700-cc87-11eb-83a6-8b86225d3ffd.png) -> GUI 박스로 플레이어의 원활한 게임 진행을 돕는다.
 
-
--> 방망이로 여우를 죽여야 한다. 만약 여우한테 맞으면 HP가 깎인다.  
-![image](https://user-images.githubusercontent.com/84313631/120946050-1d811800-c776-11eb-8944-d01f0472b53f.png)
-
-
--> 여우한테 닿아 HP가 다 깎이면 게임 오버 씬으로 .
-![image](https://user-images.githubusercontent.com/84313631/120946276-e2331900-c776-11eb-8f8b-cbfa52e31d91.png)
-
-
--> 일정 개수 이상의 꽃을 구하면 메시지 박스가 뜬다.
-![image](https://user-images.githubusercontent.com/84313631/120946070-2a057080-c776-11eb-97a5-c9a2f9a63b4e.png)
-
-
--> 꽃을 다 구하면 밤으로 씬 전환 후 좀비가 나타난다.
-![image](https://user-images.githubusercontent.com/84313631/120946119-54572e00-c776-11eb-848c-cdd470d0fe24.png)
-
-
--> 좀비한테 닿아 HP가 다 깎이면 게임 종료를 알리는 메시지 박스가 뜬다.
-![image](https://user-images.githubusercontent.com/84313631/120946150-7650b080-c776-11eb-8c40-e396319f866e.png)
-
-
--> 메시지 박스를 클릭한 후 종료화면
-![image](https://user-images.githubusercontent.com/84313631/120946162-836d9f80-c776-11eb-96e0-f9e4cbb8d484.png)
+![image](https://user-images.githubusercontent.com/84313631/121805848-fa7bca00-cc87-11eb-9296-fdf6d03bcd66.png) -> 꽃을 다 구하면 밤으로 씬 전환 후 좀비가 나타난다.
 
 
 -> 일정 수 이상의 좀비를 죽이면 다음 씬 전환을 위한 메시지 박스가 뜬다.
