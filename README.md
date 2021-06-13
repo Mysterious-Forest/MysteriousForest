@@ -57,9 +57,10 @@
     - 낮과 밤 : 낮에 신비의 물약 제조에 필요한 꽃과 물약을 모두 모으면 밤으로 변한다.
     
  # 사용 에셋 목록
- ![image](https://user-images.githubusercontent.com/84313631/121824714-3a26ce00-cce9-11eb-8ea8-08c315bdcb04.png)
+ ![image](https://user-images.githubusercontent.com/84313631/121824770-90940c80-cce9-11eb-9785-a98b54dc7722.png) -> '신비의 숲' 배경
 
-    
+ 
+ 
  # 게임 조작 방법
  
  * 캐릭터 움직임 조절 : A / S / D / W
