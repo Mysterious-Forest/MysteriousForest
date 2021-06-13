@@ -76,13 +76,11 @@
 
 ![image](https://user-images.githubusercontent.com/84313631/121805601-d2d83200-cc86-11eb-941d-3bc126732dc5.png) -> 게임 밤 종료 씬
 
-
--> 무기 교체( 칼 / 방망이 / 총 / 곡괭이 )
-![image](https://user-images.githubusercontent.com/84313631/120945886-a481c080-c775-11eb-9073-50071ffa0674.png)
-![image](https://user-images.githubusercontent.com/84313631/120945891-aba8ce80-c775-11eb-8ee7-8f4c85c85916.png)
-![image](https://user-images.githubusercontent.com/84313631/120945896-af3c5580-c775-11eb-8d7e-3608d31c2934.png)
-![image](https://user-images.githubusercontent.com/84313631/120948650-a8b1dc00-c77d-11eb-9236-f3338ec57dc9.png)
-
+![image](https://user-images.githubusercontent.com/84313631/121805665-04e99400-cc87-11eb-8c04-cbeb87b1c1f1.png)
+![image](https://user-images.githubusercontent.com/84313631/121805668-07e48480-cc87-11eb-8df8-f8fe01dcd05b.png)
+![image](https://user-images.githubusercontent.com/84313631/121805672-0adf7500-cc87-11eb-88f5-b2518db6da9b.png)
+![image](https://user-images.githubusercontent.com/84313631/121805675-0d41cf00-cc87-11eb-82a3-de08b4e91a4b.png)
+![image](https://user-images.githubusercontent.com/84313631/121805681-0fa42900-cc87-11eb-8cfd-54e47f853c12.png) -> 무기 교체( 맨손 / 칼 / 방망이 / 총 / 곡괭이 )
 
 -> 칼로 나무를 베면 과일이 나타난다. + 과일을 먹으면 HP가 올라간다.
 ![image](https://user-images.githubusercontent.com/84313631/120945954-d7c44f80-c775-11eb-8a82-9887fe734fed.png)
