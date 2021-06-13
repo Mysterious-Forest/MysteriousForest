@@ -66,8 +66,7 @@
  
 # 게임 실제 구현 모습
  
- -> 게임 시작 화면
-![image](https://user-images.githubusercontent.com/84313631/121805518-8db40000-cc86-11eb-82cd-bb495772cbb9.png)
+![image](https://user-images.githubusercontent.com/84313631/121805518-8db40000-cc86-11eb-82cd-bb495772cbb9.png)  -> 게임 시작 화면
 
 -> 게임 시작 후 첫 화면
 ![image](https://user-images.githubusercontent.com/84313631/120945851-86b45b80-c775-11eb-8263-172cc73a576a.png)
