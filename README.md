@@ -57,10 +57,10 @@
     - 낮과 밤 : 낮에 신비의 물약 제조에 필요한 꽃과 물약을 모두 모으면 밤으로 변한다.
     
  # 사용 에셋 목록
- ![image](https://user-images.githubusercontent.com/84313631/121824770-90940c80-cce9-11eb-9785-a98b54dc7722.png) -> '신비의 숲' 배경
- ![image](https://user-images.githubusercontent.com/84313631/121824789-ab668100-cce9-11eb-9350-0eb84f9ea96f.png) -> 아빠와 딸, 좀비 캐릭터
- ![image](https://user-images.githubusercontent.com/84313631/121824802-b3bebc00-cce9-11eb-83cc-f967e9d7823a.png) -> 여우 캐릭터
- ![image](https://user-images.githubusercontent.com/84313631/121824811-c20cd800-cce9-11eb-9e97-043ce82d4141.png) -> 과일 아이템
+ ![image](https://user-images.githubusercontent.com/84313631/121824770-90940c80-cce9-11eb-9785-a98b54dc7722.png) 
+ ![image](https://user-images.githubusercontent.com/84313631/121824789-ab668100-cce9-11eb-9350-0eb84f9ea96f.png) 
+ ![image](https://user-images.githubusercontent.com/84313631/121824802-b3bebc00-cce9-11eb-83cc-f967e9d7823a.png) 
+ ![image](https://user-images.githubusercontent.com/84313631/121824811-c20cd800-cce9-11eb-9e97-043ce82d4141.png) 
 
 
  
