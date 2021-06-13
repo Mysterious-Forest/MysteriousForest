@@ -92,22 +92,7 @@
 
 ![image](https://user-images.githubusercontent.com/84313631/121805848-fa7bca00-cc87-11eb-9296-fdf6d03bcd66.png) -> 꽃을 다 구하면 밤으로 씬 전환 후 좀비가 나타난다.
 
+![image](https://user-images.githubusercontent.com/84313631/121805909-4fb7db80-cc88-11eb-8fe9-6e67ceba0939.png) -> 좀비를 다 죽인 후 신비의 물약을 획득하는 씬으로 이동한다.
 
--> 일정 수 이상의 좀비를 죽이면 다음 씬 전환을 위한 메시지 박스가 뜬다.
-![image](https://user-images.githubusercontent.com/84313631/120946183-98e2c980-c776-11eb-814f-765a2bdd286b.png)
-
-
--> 메시지 박스를 클릭한 후 신비의 물약이 있는 씬이 나타난다.
-![image](https://user-images.githubusercontent.com/84313631/120946204-ae57f380-c776-11eb-97be-15a9e14caa19.png)
-
-
--> 신비의 물약을 획득한 후 종료환면으로 씬전환을 위한 메시지 박스가 뜬다.
-![image](https://user-images.githubusercontent.com/84313631/120946236-c465b400-c776-11eb-8194-ac058a258ab2.png)
-
-
--> 게임 최종 성공 씬
-![image](https://user-images.githubusercontent.com/84313631/120946249-d0ea0c80-c776-11eb-91b4-1433f01bb3ff.png)
-
-
-
+![image](https://user-images.githubusercontent.com/84313631/121805995-d4a2f500-cc88-11eb-8ef9-8340d43f2803.png) -> 게임 최종 성공 씬
 
