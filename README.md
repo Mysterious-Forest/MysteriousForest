@@ -64,11 +64,10 @@
  * 무기 교체 : ~(맨손) / 1(칼) / 2(방망이) / 3(총) / 4(곡괭이)
  * 인벤토리 창 : I
  
-# 게임 실제 구현 모습(진행상황)
+# 게임 실제 구현 모습
  
  -> 게임 시작 화면
- ![image](https://user-images.githubusercontent.com/84313631/120945808-62f11580-c775-11eb-8948-818e678d876f.png)
-
+![image](https://user-images.githubusercontent.com/84313631/121805518-8db40000-cc86-11eb-82cd-bb495772cbb9.png)
 
 -> 게임 시작 후 첫 화면
 ![image](https://user-images.githubusercontent.com/84313631/120945851-86b45b80-c775-11eb-8263-172cc73a576a.png)
