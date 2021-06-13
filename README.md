@@ -66,10 +66,15 @@
  
 # 게임 실제 구현 모습
  
-![image](https://user-images.githubusercontent.com/84313631/121805518-8db40000-cc86-11eb-82cd-bb495772cbb9.png)  -> 게임 시작 화면
+![image](https://user-images.githubusercontent.com/84313631/121805518-8db40000-cc86-11eb-82cd-bb495772cbb9.png)  -> 게임 시작 씬
 
--> 게임 시작 후 첫 화면
-![image](https://user-images.githubusercontent.com/84313631/120945851-86b45b80-c775-11eb-8263-172cc73a576a.png)
+![image](https://user-images.githubusercontent.com/84313631/121805542-ac19fb80-cc86-11eb-866e-ca8b0565d513.png) -> 게임 낮 씬
+
+![image](https://user-images.githubusercontent.com/84313631/121805589-c653d980-cc86-11eb-9ba0-d7edf1e4518d.png) -> 게임 낮 종료 씬
+
+![image](https://user-images.githubusercontent.com/84313631/121805577-c0f68f00-cc86-11eb-8b8c-5164c885af68.png) -> 게임 밤 씬
+
+![image](https://user-images.githubusercontent.com/84313631/121805601-d2d83200-cc86-11eb-941d-3bc126732dc5.png) -> 게임 밤 종료 씬
 
 
 -> 무기 교체( 칼 / 방망이 / 총 / 곡괭이 )
