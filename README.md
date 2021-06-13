@@ -80,7 +80,8 @@
 ![image](https://user-images.githubusercontent.com/84313631/121805668-07e48480-cc87-11eb-8df8-f8fe01dcd05b.png)
 ![image](https://user-images.githubusercontent.com/84313631/121805672-0adf7500-cc87-11eb-88f5-b2518db6da9b.png)
 ![image](https://user-images.githubusercontent.com/84313631/121805675-0d41cf00-cc87-11eb-82a3-de08b4e91a4b.png)
-![image](https://user-images.githubusercontent.com/84313631/121805681-0fa42900-cc87-11eb-8cfd-54e47f853c12.png) -> 무기 교체( 맨손 / 칼 / 방망이 / 총 / 곡괭이 )
+![image](https://user-images.githubusercontent.com/84313631/121805681-0fa42900-cc87-11eb-8cfd-54e47f853c12.png) 
+-> 무기 교체( 맨손 / 칼 / 방망이 / 총 / 곡괭이 )
 
 -> 칼로 나무를 베면 과일이 나타난다. + 과일을 먹으면 HP가 올라간다.
 ![image](https://user-images.githubusercontent.com/84313631/120945954-d7c44f80-c775-11eb-8a82-9887fe734fed.png)
