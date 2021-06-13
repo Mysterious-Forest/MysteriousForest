@@ -85,6 +85,10 @@
 ![image](https://user-images.githubusercontent.com/84313631/120945954-d7c44f80-c775-11eb-8a82-9887fe734fed.png)
 
 
+-> 과일을 획득하면 인벤토리 안에 개수와 함께 저장된다.
+![image](https://user-images.githubusercontent.com/84313631/121805403-18482f80-cc86-11eb-8c87-50bb47d50d49.png)
+
+
 -> 방망이로 여우를 죽여야 한다. 만약 여우한테 맞으면 HP가 깎인다.  
 ![image](https://user-images.githubusercontent.com/84313631/120946050-1d811800-c776-11eb-8944-d01f0472b53f.png)
 
